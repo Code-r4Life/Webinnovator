@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Innovators Battle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', 'Arial', 'Times New Roman';
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            background: linear-gradient(135deg, #6A0DAD, #00BFFF, #F5DEB3);
+            transition: background 0.5s ease; /* Smooth transition for gradient */
+        }
+        .nav {
+            display: flex;
+            font-size: 1.5rem;
+            align-items: center;
+            margin: 1rem 0; /* Added margin for spacing */
+        }
+        .nav a {
+            text-decoration: none;
+            margin: 0 1rem;
+            color: white;
+            transition: color 0.3s; /* Smooth color transition */
+        }
+        .nav a:hover {
+            color: #FFD700; /* Gold color on hover */
+        }
+        main {
+            font-weight: 800;
+            font-size: 2rem;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 20px;
+            color: rgb(0, 0, 0);
+        }
+        #me {
+            border: none;
+            border-radius: 12px;
+            width: 150px; /* Set width for the image */
+            height: auto; /* Maintain aspect ratio */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow */
+            transition: transform 0.3s; /* Smooth transform on hover */
+        }
+        #me:hover {
+            transform: scale(1.1); /* Slight scaling effect on hover */
+        }
+        .contents {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 23vw;
+            height: 60vh;
+            row-gap: 15px;
+            border-radius: 17px;
+            padding: 20px; /* Added padding for spacing */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for the card */
+            transition: transform 0.3s; /* Smooth transform on hover */
+        }
+        .contents:hover {
+            transform: scale(1.05); /* Slight scaling effect */
+        }
+        h3 {
+            margin-left: 20px;
+            color: #333; /* Darker color for the heading */
+        }
+        .ph, .birth {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+        .ph span, .birth span {
+            font-size: 20px;
+            color: #555; /* Slightly lighter color */
+        }
+        .linkedin {
+            width: 100%;
+            background-color: rgb(0, 120, 212);
+            text-align: center;
+            padding: 10px; /* Added padding for better click area */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+        .foot {
+            display: flex;
+            font-size: 1.5rem;
+            align-items: center;
+            position: relative;
+            right: 2px;
+            margin: 1rem 0; /* Added margin for spacing */
+        }
+        .foot a {
+            text-decoration: none;
+            margin: 1.4rem;
+            text-align: center;
+            color: #ffffff;
+            transition: color 0.3s; /* Smooth color transition */
+        }
+        .foot a:hover {
+            color: #FFD700; /* Gold color on hover */
+        }
+        a:hover {
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            transition: scale 0.2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="aboutme.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </header>
+    <main>
+        <img id="me" src="images/Me.jpg" alt="Shinjan Saha">
+        <div class="contents">
+            <h3>Shinjan Saha</h3>
+            <div class="ph">
+                <p>Phone:</p>
+                <span>+91 8017054970</span>
+            </div>
+            <div class="birth">
+                <p>Date of Birth:</p>
+                <span>19 Jan 2006</span>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/shinjan-saha-1bb744319" style="display: block; width: 100%; height: 100%; text-align: center;">
+                    <img src="linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px;">
+                </a>
+            </div>            
+        </div>
+    </main>
+    <footer> 
+        <div class="foot">
+            <a href="patent.html">Paper/Patent Publications</a>
+            <a href="awards.html">Awards and Achievements</a>
+            <a href="research.html">Research Thrust Area</a>
+            <a href="events.html">Events Attended</a>
+            <a href="courses.html">Courses</a>
+        </div>
+    </footer>
+    <script>
+        function getRandomAngle() {
+            return Math.floor(Math.random() * 360);
+        }
+
+        function updateGradient() {
+            const angle = getRandomAngle();
+            document.body.style.background = `linear-gradient(${angle}deg, #6A0DAD, #00BFFF, #F5DEB3)`;
+        }
+
+        setInterval(updateGradient, 2000);
+    </script>
+</body>
+</html>

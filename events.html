@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', 'Arial', 'Times New Roman';
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #00c6ff, #0072ff, #005bea);
+            padding: 20px; /* Add padding */
+        }
+        ul {
+            width: 60%;
+            font-size: 1.4em;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            color: #000000;
+            line-height: 1.6;
+            list-style-type: none;
+            transition: transform 0.2s, box-shadow 0.2s; /* Add transition for scaling and shadow */
+        }
+        ul:hover {
+            transform: scale(1.02); /* Scale effect on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+        }
+        h2 {
+            margin-bottom: 15px; /* Spacing below the heading */
+            color: #333; /* Heading color */
+        }
+        li {
+            margin-bottom: 10px; /* Spacing between list items */
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: white;
+            border: none;
+            background-color: #007BFF;
+            padding: 12px 20px;
+            border-radius: 4px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for button */
+            transition: transform 0.2s, box-shadow 0.2s; /* Add transition for scaling and shadow */
+        }
+        a:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h2>Events that I have attended were:</h2>
+        <li>Blind Coding and Arduino Workshop - ELEVATE</li>
+        <li>Smart Makeathon - Smart Maker Festival 2024</li>
+        <li>SMF Maker's Exhibition - Smart Maker Festival 2024</li>
+        <li>Web & App Development Workshop - DevSprint 2024</li>
+    </ul>
+    <a href="index.html">Home</a>
+    <script>
+        function getRandomAngle() {
+            return Math.floor(Math.random() * 360);
+        }
+
+        function updateGradient() {
+            const angle = getRandomAngle();
+            document.body.style.background = `linear-gradient(${angle}deg, #00c6ff, #0072ff, #005bea)`;
+        }
+
+        setInterval(updateGradient, 2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            align-items: flex-start;
+            background: linear-gradient(135deg, #ff5733, #33ff57, #3357ff);
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            transform: scale(0.8);
+            opacity: 0.5;
+            transition: transform 0.8s ease, opacity 0.8s ease; /* Slower transition */
+        }
+        li.visible {
+            transform: scale(1);
+            opacity: 1;
+        }
+        li:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            font-size: 1.7em;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            text-align: center;
+        }
+        img {
+            height: 230px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 9px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            display: inline-block;
+            color: black;
+        }
+        a:hover {
+            transform: scale(1.2);
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease-in;
+        }
+        .home-link {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: white;
+            background-color: #007BFF;
+            padding: 12px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            border: none;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .home-link:hover {
+            transform: scale(1.05);
+            background-color: #0056b3;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: none; /* Hidden by default */
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 24px; /* Increase icon size */
+        }
+        .back-to-top:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <h2>Real & Fake Virtual Logo Detector</h2>
+            <p>
+                I developed a real-and-fake logo detector using the machine-learning
+                skills I've acquired, leveraging my proficiency in JavaScript to
+                create a functional prototype on a webpage. This model employs a
+                pre-trained MobileNet V3 model to analyze the similarity between real
+                and counterfeit logos, predicting authenticity based on a similarity
+                percentage. So far, this project is still in its prototype phase, but
+                I believe it has significant potential. With guidance from a mentor or
+                an experienced professional, we could transform it into a
+                comprehensive tool with real-world applications. I showcased this
+                project at the Smart Maker Festival (SMF) at IEM Gurukul campus.
+                Although we didn’t win any awards, the experience was invaluable; we
+                gained fresh ideas for improvement and left a positive impression on
+                the judges with our current prototype.
+            </p>
+            <img src="images/smf.png" alt="Project UI" />
+        </li>
+
+        <li>
+            <h2>Spotify Clone</h2>
+            <p>
+                This Spotify clone represents a significant milestone in my journey as
+                a developer, showcasing the potential of coding to create engaging
+                applications. The project closely resembles Spotify's web interface
+                while introducing custom song folders. Using JavaScript, I implemented
+                a dynamic system that seamlessly loads songs when a folder card is
+                clicked, enhancing the user experience and demonstrating my frontend
+                skills. Focusing on HTML, CSS, and JavaScript, I have learned to
+                create visually appealing and responsive designs. This project
+                challenges me to balance aesthetic replication with my own creativity.
+                Looking ahead, I plan to master backend development to evolve this
+                into a fully functional platform. By integrating server-side
+                technologies, I aim to add features such as user authentication and
+                personalized playlists, transforming it into a comprehensive music
+                streaming service. This project reflects my commitment to continuous
+                learning and my passion for blending music with technology.
+            </p>
+            <img src="images/spotify.png" alt="Project UI" />
+        </li>
+
+        <li>
+            <h2>Currency Converter</h2>
+            <p>
+                The currency converter is a frontend project that utilizes an API to
+                deliver real-time currency exchange rates. This project has greatly
+                enhanced my understanding of how APIs work, making it particularly
+                meaningful to me despite its simplicity. In the implementation, I
+                employed JavaScript logic to initiate API calls whenever a user
+                performs a currency conversion. This ensures that the exchange rates
+                reflect current values, although they may occasionally seem outdated
+                due to the older API being used. Fortunately, this issue can be easily
+                addressed by transitioning to a more up-to-date API, which would
+                enhance the functionality and accuracy of the converter even further.
+            </p>
+            <img src="images/currconv.png" alt="Project UI" />
+        </li>
+
+        <li>
+            <p>
+                I’ve had the opportunity to work on a variety of projects, including
+                an Amazon clone, a Netflix clone, and some enjoyable games like
+                tic-tac-toe and rock-paper-scissors, as well as a personal portfolio
+                website. Each of these projects has contributed to my growth as a
+                developer. However, the three websites I highlighted are particularly
+                important to me. By the time I completed them, I gained valuable
+                insights and honed my skills in web development, design, and user
+                experience. These experiences have shaped my approach to future
+                projects and deepened my understanding of the development process.
+            </p>
+            <p>
+                <b>If you’d like to return to the homepage, simply click the button below!</b>
+            </p>
+            <a class="home-link" href="index.html">Home</a>
+        </li>
+    </ul>
+    <button class="back-to-top" id="backToTop">&#8679;</button>
+
+    <script>
+        function getRandomAngle() {
+            return Math.floor(Math.random() * 360);
+        }
+
+        function updateGradient() {
+            const angle = getRandomAngle();
+            document.body.style.background = `linear-gradient(${angle}deg, #FF5733, #33FF57, #3357FF)`;
+        }
+
+        // Scroll Event to Show/Hide Back to Top Button
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById("backToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "flex"; // Show button
+            } else {
+                backToTopButton.style.display = "none"; // Hide button
+            }
+        };
+
+        // Click Event to Scroll to Top
+        document.getElementById("backToTop").onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'}); // Smooth scroll to top
+        };
+
+        // Intersection Observer for Visibility Effect
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, options);
+
+        document.querySelectorAll('li').forEach(li => {
+            observer.observe(li);
+        });
+
+        // Initial Gradient Update
+        updateGradient();
+        setInterval(updateGradient, 3000); // Change gradient every 3 seconds
+    </script>
+</body>
+</html>

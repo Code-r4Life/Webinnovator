@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', 'Arial', 'Times New Roman';
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b, #ffcc00);
+            transition: background 0.5s ease; /* Smooth transition for background */
+        }
+        p {
+            width: 80%; /* Increased width for better readability */
+            max-width: 800px; /* Max width for larger screens */
+            font-size: 1.4em;
+            background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+            margin-bottom: 30px; /* Increased spacing */
+            padding: 20px; /* Increased padding for better spacing */
+            color: #000000;
+            line-height: 1.6;
+            transition: transform 0.3s; /* Smooth transform on hover */
+        }
+        p:hover {
+            transform: scale(1.02); /* Slight scaling effect on hover */
+        }
+        .as {
+            margin-top: 20px; /* Space above the links */
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            background-color: #007BFF; /* Button-like background */
+            padding: 10px 20px; /* Added padding for better click area */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for button */
+            margin-right: 1rem; /* Space between buttons */
+            display: inline-block;
+            border: none;
+        }
+        a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: scale(1.05); /* Scale effect on hover */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for button */
+        }
+    </style>
+</head>
+<body>
+    <p>While I currently have no formal work experience, I have engaged in several projects, including personal initiatives and collaborative efforts with a team. Although I have not yet embarked on my Data Structures and Algorithms (DSA) journey, my projects primarily focus on development, incorporating elements of both web development and machine learning.
+
+    I am eager to broaden my experience by working with a team, participating in coding contests, and pursuing internships. I believe these opportunities will not only enhance my skills but also provide valuable insights into real-world applications in the tech industry.</p>
+    <div class="as">
+        <a href="index.html">Home</a>
+        <a href="projects.html">My Projects</a>
+    </div>
+    <script>
+        function getRandomAngle() {
+            return Math.floor(Math.random() * 360);
+        }
+
+        function updateGradient() {
+            const angle = getRandomAngle();
+            document.body.style.background = `linear-gradient(${angle}deg, #ff7e5f, #feb47b, #ffcc00)`;
+        }
+
+        setInterval(updateGradient, 2000);
+    </script>
+</body>
+</html>
